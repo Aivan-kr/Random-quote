@@ -1,0 +1,63 @@
+
+body {
+  background: url("https://www.photohdx.com/images/2016/03/yellow-vintage-rusty-metal-background.jpg")
+    no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.container {
+  margin-top: 35vh;
+  text-align: center;
+}
+.cite-output,
+.cite-output2 {
+  position: relative;
+  height: 100px;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 5px solid;
+  border-radius: 20px;
+  background-image: url("https://wallpaperscraft.com/image/texture_paper_stains_old_50403_1600x1200.jpg");
+}
+
+.cite-output::before,
+.cite-output::after,
+.cite-output2::before,
+.cite-output2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("http://www.progressteel.com.ua/wp-content/uploads/2016/10/cropped-%D1%88%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%BD%D0%BA%D0%B0-1.png");
+  background-size: 100%;
+  z-index: -1;
+  transition: transform 2s;
+}
+
+.cite-output::before,
+.cite-output2::before {
+  top: -25px;
+  left: -25px;
+}
+
+.cite-output::after,
+.cite-output2::after {
+  top: -25px;
+  right: -25px;
+}
+
+.cite-output2::before,
+.cite-output2::after {
+  transform: rotate(90deg);
+}
+
+.twitter-share-button,
+#new-quote {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
